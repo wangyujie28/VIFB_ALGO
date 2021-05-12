@@ -75,7 +75,7 @@ def TIF(_rpath, _vpath):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('-r', type=str, default='/home/wang/VIFB/TNO_Image_Fusion_Dataset/Athena_images/2_men_in_front_of_house/IR_meting003_g.bmp' ,help='input IR image path', required=False)
-    parser.add_argument('-v', type=str, default= '/home/wang/VIFB/TNO_Image_Fusion_Dataset/Athena_images/2_men_in_front_of_house/VIS_meting003_r.bmp',help='input Visible image path', required=False)
+    parser.add_argument('-r', type=str, default='/home/wang/VIFB/IV_images/IR1.png' ,help='input IR image path', required=False)
+    parser.add_argument('-v', type=str, default= '/home/wang/VIFB/IV_images/VIS1.png',help='input Visible image path', required=False)
     args = parser.parse_args()
     TIF(args.r, args.v)
